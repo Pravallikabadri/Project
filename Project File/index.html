@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pollen Image Classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🌾 Pollen Image Classifier</h1>
+    <p>Upload a microscope image to identify the pollen species.</p>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" required>
+      <br>
+      <input type="submit" value="Predict">
+    </form>
+  </div>
+</body>
+</html>
